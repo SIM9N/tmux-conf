@@ -8,13 +8,18 @@
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-### Copy `.tmux.conf` to `.config/tmux/tmux.conf`
-
 ### Apply configs
 
 ```bash
-tmux source .config/tmux/tmux.conf
-# cmd + b + shift I
+cp .tmux.conf ~/.config/tmux/tmux.conf
+tmux source ~/.config/tmux/tmux.conf
+```
+
+### Start tmux and load configs
+
+```bash
+tmux
+# cmd + b + shift i
 ```
 
 ### Use [nerd font](https://www.nerdfonts.com/font-downloads) for terminal
